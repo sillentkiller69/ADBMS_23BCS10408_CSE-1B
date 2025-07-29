@@ -1,1 +1,75 @@
+# University Database Management System in SQL
 
+## 📖 Overview
+
+This project is a practical demonstration of designing, creating, and managing a relational database for a university. It serves as a hands-on guide to fundamental and advanced SQL concepts, from creating tables and performing simple queries to managing user access and ensuring data integrity with transactions.
+
+The repository is structured into multiple experiments, each housed in its own directory (`/exp1`, `/exp2`, etc.) and focusing on a specific set of database skills.
+
+## ✨ Core Concepts Covered
+
+This project provides practical examples for the following database concepts:
+
+-   **Relational Schema Design**: Creating normalized tables with Primary and Foreign Keys.
+-   **Data Definition Language (DDL)**: Using `CREATE`, `ALTER`, and `DROP` to define the database structure.
+-   **Data Manipulation Language (DML)**: Using `INSERT`, `SELECT`, `UPDATE`, and `DELETE` to manage data.
+-   **Complex Queries**: Fetching combined data from multiple tables using `JOIN` operations.
+-   **Data Aggregation**: Analyzing data with aggregate functions like `COUNT()` alongside `GROUP BY` and `HAVING` clauses.
+-   **Data Control Language (DCL)**: Securing the database by managing user permissions with `GRANT` and `REVOKE`.
+-   **Transaction Control Language (TCL)**: Ensuring data integrity during critical operations using `START TRANSACTION`, `COMMIT`, `ROLLBACK`, and `SAVEPOINT`.
+
+## 🛠️ Technology Requirements
+
+-   **Hardware**: PC/Laptop with at least 4GB RAM.
+-   **Operating System**: Windows / Linux / macOS.
+-   **RDBMS**: The scripts are written for **MySQL**, but can be adapted for PostgreSQL, Oracle, or SQL Server.
+-   **SQL Client**: MySQL Workbench, pgAdmin, DBeaver, or any other standard SQL management tool.
+
+## 📁 Repository Structure
+
+The project is organized into separate directories for each experiment:
+
+```
+.
+├── exp1/
+│   └── solution.sql
+├── exp2/
+│   └── solution.sql
+├── exp3/
+│   └── solution.sql
+├── ... (and so on for exp4 to exp10)
+└── README.md         <-- You are here
+```
+
+-   Each `exp<N>` folder contains the complete SQL script (`solution.sql`) for that specific problem.
+-   The experiments are designed to increase in complexity, building upon the concepts from previous ones.
+
+## 🚀 How to Run the Experiments
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your-username/your-repository-name.git](https://github.com/your-username/your-repository-name.git)
+    ```
+2.  **Navigate to the project directory:**
+    ```bash
+    cd your-repository-name
+    ```
+3.  **Choose an experiment** by navigating into its folder (e.g., `cd exp1`).
+4.  **Open the `solution.sql` file** in your preferred SQL client (like MySQL Workbench).
+5.  **Execute the script.** You can run the entire file at once or execute statements step-by-step to observe the results.
+
+---
+
+## 🔬 Experiment Descriptions
+
+#### `exp1` - Author-Book Relationship (Easy)
+-   **Objective**: Learn the basics of table creation (`CREATE`), data insertion (`INSERT`), and fetching related data from two tables using an `INNER JOIN`.
+
+#### `exp2` - Department-Course Analysis & Access Control (Medium)
+-   **Objective**: Perform data analysis using `GROUP BY` and `HAVING` to find departments that meet certain criteria. Also covers database security by granting specific user permissions with `GRANT`.
+
+#### `exp3` - Transaction Management in Student Enrollments (Hard)
+-   **Objective**: Master data integrity concepts. This experiment simulates a complex operation (student enrollment) within a `TRANSACTION`, using a `SAVEPOINT` to handle potential errors and `ROLLBACK` to maintain a consistent state.
+
+#### `exp4` to `exp10`
+-   These folders are placeholders for future experiments, allowing for the expansion of the project with more advanced database scenarios.
